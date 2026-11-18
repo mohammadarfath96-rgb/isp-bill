@@ -76,3 +76,7 @@ export const EXPENDITURE_CATEGORIES = [
 ]
 
 export const ITEMS_PER_PAGE = 10
+export const getCurrentYears = (count = 5) => {
+  const year = new Date().getFullYear()
+  return Array.from({ length: count }, (_, i) => year - i)
+}
